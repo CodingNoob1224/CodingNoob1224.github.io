@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>排球規則介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #666;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ccf; /* 淺藍色 */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        article {
+            font-style: italic;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>排球規則介紹</h1>
+    </header>
+    <nav>
+        <a href="#section1">排球規則</a>
+        <a href="#section2">排球技巧</a>
+        <a href="#section3">排球位置介紹</a>
+        <a href="#section4">排球製造商</a>
+        <a href="#section5">歡迎加入資工系排</a>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>排球規則</h2>
+            <p>排球是一種團隊運動，通常由兩支隊伍進行比賽，每隊六人。目的是將球打到對方場地上，使對方無法回擊或回擊失誤。</p>
+            <p>排球比賽由多局（通常為五局）組成，每局25分，直到一隊先得到25分並且領先對手至少兩分為止。</p>
+            <p>排球比賽中，球可用手、手腕、手臂或其他身體部位擊打，但不可持球超過三次且每次不得兩次以上由同一位球員進行。</p>
+        </section>
+        <section id="section2">
+            <h2>排球技巧</h2>
+            <article>
+                <h3>排球基本技巧</h3>
+                <ul>
+                    <li>發球</li>
+                    <li>接發</li>
+                    <li>扣球</li>
+                    <li>攔網</li>
+                    <li>防守</li>
+                </ul>
+            </article>
+        </section>
+        <section id="section3">
+            <h2>排球位置介紹</h2>
+            <article>
+                <h3>排球位置</h3>
+                <p>在排球比賽中，各個位置擁有不同的角色和責任。</p>
+                <h4>舉球員</h4>
+                <p>舉球員通常擔任球隊的組織者，負責控制進攻節奏和發動進攻。</p>
+                <h4>攻擊手</h4>
+                <p>攻擊手主要負責進行攻擊，將球打到對方場地上，得分機會較多。</p>
+                <h4>自由球員</h4>
+                <p>自由球員通常擔任防守和接發的角色，具有靈活性和全場視野。</p>
+            </article>
+        </section>
+        <section id="section4">
+            <h2>排球製造商</h2>
+            <article>
+                <h3>排球製造商</h3>
+                <table>
+                    <tr>
+                        <th>製造商</th>
+                        <th>網站</th>
+                    </tr>
+                    <tr>
+                        <td>Mikasa</td>
+                        <td><a href="https://www.mikasasports.com/">www.mikasasports.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Molten</td>
+                        <td><a href="https://www.molten.co.jp/">www.molten.co.jp</a></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <div class="section" id="section5">
+          <h2>歡迎加入資工系排</h2>
+          <article class="article">
+              <form class="form-container">
+                  <label for="join-volleyball">是否想加入資工系排?</label><br>
+                  <input type="radio" id="yes" name="join-volleyball" value="yes">
+                  <label for="yes">是</label><br>
+                  <input type="radio" id="no" name="join-volleyball" value="no">
+                  <label for="no">否</label><br>
+                  
+                  <label for="name">姓名:</label><br>
+                  <input type="text" id="name" name="name" placeholder="請輸入您的姓名"><br>
+                  
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email" placeholder="請輸入您的Email"><br>
+                  
+                  <label for="gender">性別:</label><br>
+                  <select id="gender" name="gender">
+                      <option value="male">男性</option>
+                      <option value="female">女性</option>
+                      <option value="other">其他</option>
+                  </select><br>
+                  
+                  <label for="comments">意見:</label><br>
+                  <textarea id="comments" name="comments" placeholder="請在此輸入您的意見"></textarea><br>
+                  
+                  <input type="submit" value="提交">
+              </form>
+          </article>
+        </div>
+      
+        
+    </main>
+    <div class="image-container">
+        <img src="/pic/S__142499858_0.jpg" alt="排球圖片" title="排球">
+        <img src="/pic/S__142499860_0.jpg" alt="排球圖片" title="排球">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_O1GdoJk-2A?si=rrAwE2Esj0BPBTkP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<footer class="footer">
+<p>版權所有 &copy; 2024</p>
+</footer>
+</body>
+</html>
